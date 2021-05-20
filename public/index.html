@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="author" content="Fernando Lopes">
-  <meta name="description" content="Instalação, manutenção e conserto de fogões e cooktops em Recife.">
-  <meta name="keywords" content="fogão, cooktop, doação fogão, nacc, assistência">
+  <meta name="description" content="Request you insurance with us.">
+  <meta name="keywords" content="insurance">
 
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/index.css">
@@ -23,7 +23,13 @@
       <img class="logo" src="./img/logo.png" alt="logo">
     </a>
 
-    <nav>
+    
+    <div id="menu" class="menu-toggle">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+    </div>
+    <nav class="">
       <ul>
         <li>
           <a href="#home">Home</a>
@@ -43,7 +49,7 @@
       </ul>
     </nav>
 
-    <div>
+    <div class="header-buttons">
       <button class="btn-header">REQUEST QUOTE</button>
       <button class="btn-lang">EN</button>
     </div>
@@ -61,15 +67,24 @@
   
         <div class="input-container">
           <span>Your Name</span>
-          <input type="text" name="name" value="" >
+          <input type="text" name="name" value="" required>
         </div>
         <div class="input-container">
           <span>Phone</span>
-          <input type="text" name="phone" value="" >
+          <input 
+            type="tel"
+            id="phone"
+            name="phone"
+            title=”XXX-XXX-XXXX”
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            maxlength="12"
+            value=""
+            required
+          >
         </div>
         <div class="input-container">
           <span>Email</span>
-          <input type="email" name="email" value="" >
+          <input type="email" name="email" value="" required>
         </div>
   
         <select name="type" id="">

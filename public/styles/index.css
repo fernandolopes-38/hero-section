@@ -13,11 +13,11 @@ header {
   width: 160px;
 }
 
-ul {
+nav ul {
   display: flex;
 }
 
-li {
+nav ul li {
   font-size: 1rem;
   font-weight: 700;
   list-style: none;
@@ -129,7 +129,10 @@ button[type="submit"] {
 .input-container {
   position: relative;
 }
-input[type="text"], input[type="email"], select {
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+select {
   height: 3.2rem;
   width: 100%;
 
@@ -169,7 +172,7 @@ select {
   margin-top: 1.5rem;
 }
 select option {
-  line-height: 2.5;
+  font-size: 1rem;
 }
 
 .checkbox-container {
@@ -212,18 +215,133 @@ label a {
 
 .providers-content p {
   font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .providers-container {
   display: flex;
   flex-wrap: wrap;
-
-  margin-top: 0.5rem;
 }
 .square {
-  height: 70px;
-  width: 100px;
+  height: 4.375rem;
+  width: 6.25rem;
   background-color: var(--gray-100);
 
-  margin: 0.5rem 0.75rem;
+  margin: 1.5rem 1.5rem 0 0;
+}
+.square:last-child {
+  margin-right: 0;
+}
+
+
+.menu-toggle {
+  display: none;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.menu-toggle > div {
+  background-color: #000;
+  height: 5px;
+  width: 100%;
+  margin: 6px auto;
+
+  transition-duration: 0.3s;
+}
+
+.menu-oppend > div.one {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.menu-oppend > div.two {
+  opacity: 0;
+}
+
+.menu-oppend > div.three {
+  transform: rotate(-45deg) translate(8px, -9px);
+}
+
+@media(max-width: 920px) {
+  nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    order: 2;
+    display: block;
+  }
+
+  .on {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100vw;
+    height: calc(100vh - 6rem);
+
+    background-color: var(--white);
+
+    z-index: 20;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav.on ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav.on ul li {
+    font-size: 1rem;
+    font-weight: 700;
+    list-style: none;
+    padding: 1rem 0;
+  }
+
+  main > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: auto;
+    overflow: hidden;
+  
+    border-radius: 2rem;
+  }
+  .img-background {
+    position: initial;
+    bottom: -50px;
+    transform: scaleX(-1);
+  
+    width: 100%;
+    border-radius: 2rem;
+  }
+
+  form {
+    position: initial;
+    margin-top: 3rem;
+  }
+
+  .providers-content {
+    margin: 0 auto;
+    width: auto;
+  }
+  .providers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .square:last-child {
+    margin-right: 1.5rem;
+  }
 }
