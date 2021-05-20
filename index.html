@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="author" content="Fernando Lopes">
+  <meta name="description" content="Instalação, manutenção e conserto de fogões e cooktops em Recife.">
+  <meta name="keywords" content="fogão, cooktop, doação fogão, nacc, assistência">
+
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/index.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Home | VFB Insurance</title>
+</head>
+<body>
+  <header>
+
+    <img class="logo" src="./img/logo.png" alt="logo">
+
+    <nav>
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#aboutus">About Us</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#blog">Blog</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <button class="btn-header">REQUEST QUOTE</button>
+      <button class="btn-lang">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- <div class="img-background-container"> -->
+      <img class="img-background" src="./img/wallpaper.jpg" alt="imagem de fundo">
+    <!-- </div> -->
+
+    <form>
+      <h1>Request an Insurance Quote</h1>
+
+      <div class="input-container">
+        <span>Your Name</span>
+        <input type="text" name="name" value="" >
+      </div>
+      <div class="input-container">
+        <span>Phone</span>
+        <input type="text" name="phone" value="" >
+      </div>
+      <div class="input-container">
+        <span>Email</span>
+        <input type="email" name="email" value="" >
+      </div>
+
+      <select name="type" id="">
+        <option value="">Select an insurance type</option>
+        <option value="0">Type 1</option>
+        <option value="1">Type 2</option>
+      </select>
+
+      <div class="checkbox-container">
+        <label>
+          <input type="checkbox" name="checkbox">
+            By checking this box to send a request of a quote in our website, you agree to our
+            <a href="#">Terms of Use</a>
+            &
+            <a href="#">Privacy Policy</a>.
+        </label>
+      </div>
+      
+      <button type="submit">SEND REQUEST</button>
+      
+    </form>
+    
+    <!-- <div class="content"> -->
+    <div class="providers-content">
+      <p>Our Insurance Providers:</p>
+      
+      <div class="providers-container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+
+    </div>
+    <!-- </div> -->
+
+  </main>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
