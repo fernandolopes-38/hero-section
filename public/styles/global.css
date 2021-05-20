@@ -8,11 +8,10 @@
 :root {
   --white: #fff;
   --text: #4D4D4D;
-  --red-500: #C4151C;
-  --blue-400: #134172;
-  --blue-500: #0B4282;
-  --gray-blue-500: #283C55;
+  --red-500: #C4161C;
+  --blue-500: #024282;
   --gray-100: #E8F4FF;
+  --gray-200: #9AB3CD;
 }
 
 html {
@@ -34,11 +33,10 @@ html {
 body {
   background-color: var(--white);
   color: var(--text);
-  /* height: 100vh; */
 }
 
 body, input, textarea, button {
-  font: 400 1rem 'Roboto', sans-serif;
+  font: 400 1rem 'Nunito Sans', sans-serif;
 }
 
 button {
