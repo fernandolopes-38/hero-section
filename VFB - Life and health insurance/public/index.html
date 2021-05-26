@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="author" content="Fernando Lopes">
+  <meta name="description" content="Request you insurance with us.">
+  <meta name="keywords" content="insurance">
+
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/index.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" 
+    rel="stylesheet"
+  >
+
+  <title>Home | VFB Insurance</title>
+</head>
+<body>
+  <header id="home">
+    <a href="#">
+      <img class="logo" src="./img/logo.png" alt="logo">
+    </a>
+
+    
+    <div id="menu" class="menu-toggle">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+    </div>
+    <nav class="">
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#aboutus">About Us</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#blog">Blog</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-buttons">
+      <button class="btn-header">REQUEST QUOTE</button>
+      <button class="btn-lang">EN</button>
+    </div>
+  </header>
+
+  <main>
+
+    <section>
+      <div class="img-container">
+        <img class="img-background" src="./img/background.jpeg" alt="imagem de fundo">
+      </div>
+  
+      <form>
+        <h1>Request an Insurance Quote</h1>
+  
+        <div class="input-container">
+          <span>Your Name</span>
+          <input type="text" name="name" value="" required>
+        </div>
+        <div class="input-container">
+          <span>Phone</span>
+          <input 
+            type="tel"
+            id="phone"
+            name="phone"
+            title=”XXX-XXX-XXXX”
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            maxlength="12"
+            value=""
+            required
+          >
+        </div>
+        <div class="input-container">
+          <span>Email</span>
+          <input type="email" name="email" value="" required>
+        </div>
+  
+        <select name="type" id="">
+          <option value="">Select an insurance type</option>
+          <option value="0">Type 1</option>
+          <option value="1">Type 2</option>
+        </select>
+  
+        <div class="checkbox-container">
+          <label>
+            <input type="checkbox" name="checkbox">
+              By checking this box to send a request of a quote in our website, you agree to our
+              <a href="#">Terms of Use</a>
+              &
+              <a href="#">Privacy Policy</a>.
+          </label>
+        </div>
+        
+        <button type="submit">SEND REQUEST</button>
+        
+      </form>
+
+    </section>
+    
+    <section>
+      <div class="providers-content">
+        <p>Our Insurance Providers:</p>
+        
+        <div class="providers-container">
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutus">
+      <img class="" src="./img/nurse.jpg" alt="">
+      <img class="" src="./img/desk.jpg" alt="">
+      <div>
+        <p class="subtitle">About Us:</p>
+        <h1>A committed company to give the true value to you and your family.</h1>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in eleifend nisl. Proin lobortis metus quis mi molestie, eleifend suscipit neque scelerisque. Mauris ultrices ultricies lorem et ultricies. Morbi hendrerit varius consequat. Nam laoreet nulla in urna pharetra lobortis nec ut lectus.</p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Cras in eleifend nisl.</li>
+          <li>Consectetur adipiscing elit.</li>
+          <li>Proin lobortis metus quis mi molestie.</li>
+        </ul>
+
+        <button>KNOW MORE</button>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wave-top">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+          <path 
+            d="M0.00,49.99 C341.08,-4.64 301.58,132.52 500.00,49.99 L500.00,0.00 L0.00,0.00 Z" 
+            style="stroke: none; fill: #fff;"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="services-carousel">
+        <h1>Our Insurances</h1>
+
+        <div class="service-img-container">
+          <img 
+            id="serviceImg"
+            src="./img/insurance.png" 
+            alt=""
+          >
+          <div class="arrows-container">
+            <button class="arrow-container">
+              <span class="material-icons">expand_less</span>
+            </button>
+            <button class="arrow-container">
+              <span class="material-icons">expand_more</span>
+            </button>
+          </div>
+          <h1 class="image-title">Health Insurance</h1>
+        </div>
+        <p>READ MORE</p>
+      </div>
+
+      <div class="clients-opinions">
+        <h1>What our clients says:</h1>
+
+        <div>
+          <img src="./img/Elipse0.png" alt="">
+          <div>
+            <img class="main-avatar" src="./img/Elipse1.png" alt="">
+            <div class="opinion-container">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in eleifend nisl. Proin lobortis metus quis mi molestie, eleifend suscipit neque scelerisque. Mauris ultrices ultricies lorem et ultricies. Morbi hendrerit varius consequat. Nam laoreet nulla in urna pharetra lobortis nec ut lectus.</p>
+              <p class="client-name">Client Name</p>
+            </div>
+          </div>
+          <img src="./img/Elipse2.png" alt="">
+        </div>
+      </div>
+      
+      <div class="wave-bottom">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+          <path 
+            d="M0.00,49.99 C384.53,-88.51 202.26,135.49 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" 
+            style="stroke: none; fill: #fff;"
+          ></path>
+        </svg>
+      </div>
+
+      <div id="dotted"></div>
+    </section>
+
+    <section id="blog">
+      <div class="head">
+        <h2>LATEST NEWS</h2>
+        <h1>
+          Follow Our Blog <br/>
+          & Read Our Content
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in eleifend nisl. Proin lobortis metus quis mi molestie, eleifend suscipit neque scelerisque.</p>
+      </div>
+
+      <div class="container">
+        <div class="flex-column">
+          <div>
+            <div class="blog-img-container">
+              <img src="./img/life.jpg" alt="">
+            </div>
+
+            <article>
+              <time>Month 00, 2021</time>
+              <h3>Three Cool benefits of your life insurance</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in eleifend nisl. Proin lobortis metus quis mi molestie, eleifend suscipit neque scelerisque.</p>
+              <p class="read-more">READ MORE</p>
+            </article>
+          </div>
+
+          <div>
+            <div class="blog-img-container">
+              <img src="./img/nurse2.jpg" alt="">
+            </div>
+
+            <article>
+              <time>Month 00, 2021</time>
+              <h3>Six tips to save on your health insurance</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in eleifend nisl. Proin lobortis metus quis mi molestie, eleifend suscipit neque scelerisque.</p>
+              <p class="read-more">READ MORE</p>
+            </article>
+          </div>
+        </div>
+        <div class="flex-column">
+          <div>
+            <article>
+              <h3>A better way to protect your loved ones</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in eleifend nisl. Proin lobortis metus quis mi molestie, eleifend suscipit neque scelerisque.</p>
+              <p class="read-more">READ MORE</p>
+            </article>
+          </div>
+          <div>
+            <article>
+              <h3>Three Cool benefits of your life insurance</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in eleifend nisl. Proin lobortis metus quis mi molestie, eleifend suscipit neque scelerisque.</p>
+              <p class="read-more">READ MORE</p>
+            </article>
+          </div>
+          <div>
+            <article>
+              <h3>Three Cool benefits of your life insurance</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in eleifend nisl. Proin lobortis metus quis mi molestie, eleifend suscipit neque scelerisque.</p>
+              <p class="read-more">READ MORE</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <img class="logo" src="./img/logo.png" alt="logo">
+    <div>
+      <div class="footer-column">
+        <h2>Contact Information:</h2>
+        <div>
+          <div class="icon-container">
+            <span class="material-icons-outlined">
+              location_on
+            </span>
+          </div>
+          <p>2295 South Hiawassee Road 107, <br/>
+            Orlando, Florida, USA.</p>
+        </div>
+        <div>
+          <div class="icon-container">
+            <span class="material-icons-outlined">
+              mail
+            </span>
+          </div>
+          <p>contact@myvfbinsurance.com</p>
+        </div>
+        <div>
+          <div class="icon-container"></div>
+          <p>(000) 000 - 0000</p>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h2>Our Insurances:</h2>
+        <ul>
+          <li>Health Insurance</li>
+          <li>Life Insurance</li>
+          <li>Vision Insurance</li>
+          <li>Dental Insurance</li>
+          <li>Travel Insurance</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>Latest Articles:</h2>
+
+        <div>
+          <div class="calendar-container">
+            <span>00</span>
+            <div>
+              <span>MAY</span>
+            </div>
+          </div>
+          <p><strong>Three Cool benefits of your life insurance</strong></p>
+        </div>
+        <div>
+          <div class="calendar-container">
+            <span>00</span>
+            <div>
+              <span>MAY</span>
+            </div>
+          </div>
+          <p><strong>Six tips to save on your health insurance</strong></p>
+        </div>
+        <div>
+          <div class="calendar-container">
+            <span>00</span>
+            <div>
+              <span>MAY</span>
+            </div>
+          </div>
+          <p><strong>A better way to protect your loved ones</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot">
+      <p>Copyright © 2021 VFB Life and Health Insurance. All rights reserved.</p>
+      <img class="tier-logo" src="./img/tier-logo.png" alt="tier digital logo">
+    </div>
+  </footer>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
