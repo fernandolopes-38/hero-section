@@ -335,7 +335,6 @@ div#dotted {
   width: 100%;
 
   background-image: url('../img/grade.png');
-
 }
 
 .services-carousel {
@@ -480,6 +479,7 @@ div#dotted {
   right: 0;
   height: 100px;
   overflow: hidden;
+  margin: -5px;
   z-index: 10;
 }
 .wave-bottom {
@@ -489,6 +489,7 @@ div#dotted {
   right: 0;
   height: 170px;
   overflow: hidden;
+  margin: -5px;
   z-index: 10;
 }
 
